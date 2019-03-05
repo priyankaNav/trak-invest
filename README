@@ -49,88 +49,12 @@ Filters
 
   A simple filter that adds a header to every response.
   
-  
-  
-  
-  
-  > **Name**: ***Priyanka Navgire***
->
-> **Email**: *Priyanka.navgire11@gmail.com*
->
-> **Batch**: ***8***
-
-___
 
 
 
 
 
-# 1. Convolution 
-
-> Convolution operation is a fundamental building block of CNN. Mathematically, the convolution operation is the **summation of element-wise product** of two matrices. 
->
-> Let's take two matrices, X and Y as shown below. If we *convolve the image X with filter Y* , this operation will produce a matrix *Z*. Finally you compute the sum of all the elements in *Z* to get  ***a scalar number*** , i.e. **3 + 4 + 0  + 6 + 0 + 0 + 0 + 45 + 2 = 60**
->
-> ### Code:[Matrix]
->
-> $$
-> X = \begin{bmatrix}
-> 1&2&3\\
-> 2&0&0\\
-> 7&9&1\\
-> \end{bmatrix}
-> 
-> Y = \begin{bmatrix}
-> 3&2&0\\
-> 3&0&1\\
-> 0&5&2\\
-> \end{bmatrix}
-> 
-> Z = \begin{bmatrix}
-> 1X3=3&2X2=4&3X0=0\\
-> 2X3=6&0X0=0&0X1=0\\
-> 7X0=0&9X5=45&1X2=2\\
-> \end{bmatrix}
-> $$
-
-------
 
 
-
-# 2. Filters / Kernels
-
->Filters/Kernels are integral component of CNN. It is an operator that is applied on the entire image such that it transforms the information encoded in the pixels. They are used to convolve with image pixel by pixel and extract features like blurring, masking, edge detection or more. The size of the kernal is usually smaller than the size of the image. Each filter extracts particular feature when convolved with the image. The values of the filters are learned by the network.
->
->Eg: We can relate this with the filters applied on real world photgraphic images. 
->
->![Filter](/Users/priyanka/Desktop/Filter.png)
-
-------
-
-
-
-# 3. Epochs
-
->One epoch is one complete pass of the entire training dataset including both forward and backward through the neural network. Since the dataset is huge and we cannot pass all of the training data in one shot to the computer, instead we pass data in chunks called batches.
->
->Let's say we have 10000 data points and we want to feed in the data in batches of say 100 then it will take 10000/200 = 100 iterations to complete 1epoch, Since one epoch is not enough so we use multiple epoch through the same neural network.
-
-------
-
-
-
-# 4. Feature Maps
-
->A feature Map is collection of multiple neurons(its basically a filter, whose weights are learnt during training), each of these neurons look at different regions of the input image with same weights. All neurons in a feature map extract the same feature from different region of input image. And this is collectively called feature map, beacuse it is a mapping of where a certain feature is founf in the input image.
->
->![featureMap](/Users/priyanka/Desktop/featureMap.png)
->
->
-
-# 5. Activation Function 
-
->Activation Function decides which part of the input to be masked and which part of the input to be passed forward by deciding whether a particular neuron need to be activated or not by calculating the weighted sum and further adding biases with it. Its main purpose is to add non-linearity into the output by transforming the input making it more capable to handle complex tasks.
->
->
 
 
